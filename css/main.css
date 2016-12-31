@@ -1,0 +1,383 @@
+/*//////////////////////////////////////
+	UNIVERSAL
+//////////////////////////////////////*/
+
+* {
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+	font-weight: normal;
+	text-decoration: none;
+	box-sizing: border-box;
+	font-family:  Comic Sans MS, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	padding: 0;
+	margin: 0;
+	font-weight: normal;
+}
+
+img,
+video {
+	max-width: 100%;
+}
+
+input, button, select, submit {
+	border: none;
+}
+
+button:focus {
+  outline:0;
+}
+
+/* ---- Float clearfix ---- */
+
+.clearfix::after {
+		content: " ";
+		display: table;
+		clear: both;	
+}
+
+
+
+/*//////////////////////////////////////
+	TEXT TRANSFORM
+//////////////////////////////////////*/
+
+/*Uppercase*/
+.menu-buttons,
+.win,
+.wrong {
+  text-transform: uppercase;
+}
+
+/*Lowercase*/
+
+
+
+/*//////////////////////////////////////
+	LETTER SPACING
+//////////////////////////////////////*/
+
+
+
+/*//////////////////////////////////////
+	FONTS
+//////////////////////////////////////*/
+
+/*ALFA SLAB*/
+h1,
+.win,
+.wrong {
+  font-family: 'Alfa Slab One', cursive;
+}
+
+/*OPEN SANS*/
+.menu-buttons {
+  font-family: 'Open Sans', sans-serif;
+}
+
+
+
+/*//////////////////////////////////////
+	COLORS
+//////////////////////////////////////*/
+
+/*BLACK*/
+.simon,
+.win {
+  background-color: #212121;
+}
+
+/*BLUE*/
+.blue {
+  background-color: #1475d6;
+}
+
+.blue-on {
+  background-color: #3d99f6;
+  /*Glow*/
+  -webkit-box-shadow: 0px 0px 20px rgba(20,117,214,0.8);
+  -moz-box-shadow: 0px 0px 20px rgba(20,117,214,0.8);
+  box-shadow: 0px 0px 20px rgba(20,117,214,0.8);
+}
+
+/*LIGHT GRAY*/
+h1,
+.win,
+.counter {
+  color: #C9C9C9;
+}
+
+.start,
+.strict {
+  background-color: #C9C9C9;
+}
+
+/*GRAY*/
+.site-container {
+  background-color: #424242;
+}
+
+.start,
+.win, 
+.strict,
+.counter {
+  border: solid 3px #424242;
+}
+
+/*GREEN*/
+.green {
+  background-color: #00c142;
+}
+
+.green-on {
+  background-color: #35e672;
+  /*Glow*/
+  -webkit-box-shadow: 0px 0px 20px rgba(0,193,66,0.8);
+  -moz-box-shadow: 0px 0px 20px rgba(0,193,66,0.8);
+  box-shadow: 0px 0px 20px rgba(0,193,66,0.8);
+}
+
+/*RED*/
+.wrong {
+  color: #e70c00;
+}
+
+.red {
+  background-color: #e70c00;
+}
+
+.red-on {
+  background-color: #fd4b41;
+  /*Glow*/
+  -webkit-box-shadow: 0px 0px 20px rgba(231,12,0,0.8);
+  -moz-box-shadow: 0px 0px 20px rgba(231,12,0,0.8);
+  box-shadow: 0px 0px 20px rgba(231,12,0,0.8);
+}
+
+/*WHITE*/
+.counter {
+  background-color: rgba(255,255,255,0.1);
+}
+
+.on {
+  /*Glow*/
+  -webkit-box-shadow: 0px 0px 20px rgba(255,255,255,0.8);
+  -moz-box-shadow: 0px 0px 20px rgba(255,255,255,0.8);
+  box-shadow: 0px 0px 20px rgba(255,255,255,0.8);
+}
+
+/*YELLOW*/
+.yellow {
+  background-color: #f0e10c;
+}
+
+.yellow-on {
+  background-color: #fef24d;
+  /*Glow*/
+  -webkit-box-shadow: 0px 0px 20px rgba(240,225,12,0.8);
+  -moz-box-shadow: 0px 0px 20px rgba(240,225,12,0.8);
+  box-shadow: 0px 0px 20px rgba(240,225,12,0.8);
+}
+
+
+
+/*//////////////////////////////////////
+	SIMON GAME
+//////////////////////////////////////*/
+
+.simon {
+  max-width: 1000px;
+  padding: 80px 5px 30px 5px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/*MENU*/
+.title {
+  font-size: 46px;
+  position: absolute;
+  top: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+}
+
+.win,
+.wrong {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-shadow: 2px 2px black;
+}
+
+.win {
+  font-size: 86px;
+  top: 160px;
+}
+
+.wrong {
+  font-size: 50px;
+  top: 250px;
+}
+
+.start,
+.strict {
+  margin: 5px 0 10px 0;
+  padding: 14px;
+  font-size: 17px;
+  border-radius: 50%;
+}
+
+.counter {
+  padding: 10px 27px;
+  font-size: 22px;
+  border-radius: 20%;
+}
+
+/*BUTTONS*/
+.btn,
+.start,
+.strict {
+  cursor: pointer;
+}
+
+.btn {
+  height: 170px;
+  width: 47%;
+}
+
+.unclickable {
+    pointer-events: none;
+}
+
+.green {
+  border-radius: 150px 10px 10px 10px;
+}
+
+.red {
+  border-radius: 10px 150px 10px 10px;
+}
+
+.yellow {
+  border-radius: 10px 10px 10px 150px;
+}
+
+.blue {
+  border-radius: 10px 10px 150px 10px;
+}
+
+
+
+
+
+/*//////////////////////////////////////
+////////////////////////////////////////
+	MEDIA QUERIES
+////////////////////////////////////////
+//////////////////////////////////////*/
+
+@media (min-width: 440px) {
+  
+  .btn {
+    height: 120px;
+    width: 35%;
+  }
+  
+  .wrong {
+    top: 200px;
+  }
+  
+  
+}
+
+@media (min-width: 800px) {
+  
+  .site-content {
+    padding-top : 100px;
+  }
+  
+  .simon {
+    padding-top: 33px;
+    height: 710px;
+    width: 710px;
+    border-radius: 100%;
+  }
+  
+  .win {
+    top: 40px;
+  }
+  
+  .wrong {
+    font-size: 65px;
+    top: 145px;
+  }
+  
+  .menu {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    height: 350px;
+    width: 350px;
+    background-color: #212121;
+    border: solid 10px #C9C9C9;
+    top: 280px;
+    left: 0;
+    right: 0;
+    border-radius: 100%;
+  }
+  
+  .title {
+    font-size: 55px;
+    padding: 40px 0 20px 0;
+    position: relative;
+  }
+  
+  .start,
+  .strict {
+    width: 95px;
+    height: 95px;
+  }
+  
+  .counter {
+    padding: 19px 28px;
+    font-size: 32px;
+  }
+  
+  .btn {
+    height: 320px;
+    width: 320px;
+  }
+  
+  .green {
+    border-top-left-radius: 100%;
+  }
+  
+  .red {
+    border-top-right-radius: 100%;
+  }
+  
+  .yellow {
+    border-bottom-left-radius: 100%;
+  }
+  
+  .blue {
+    border-bottom-right-radius: 100%;
+  }
+  
+  
+  
+  
+}
+
+

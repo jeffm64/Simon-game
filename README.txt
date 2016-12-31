@@ -1,0 +1,1 @@
+This is the Simon game. It will give random colors in a set rythmn. If you have strict off and get the pattern wrong, you can try again. If strict is on and you get the pattern wrong, you have to start over from the beginning. You can win by getting up to 25.
